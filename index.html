@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">The Joi Projects</div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <img src="20-1-2020 278.jpg" alt="Your Photo" class="profile-photo">
+            <h1>Hi, I'm Jai</h1>
+            <p>I am a passionate developer and creator. I build projects that inspire.</p>
+            <!-- Moved the button below the content section to avoid overlap -->
+            <div class="cta-container">
+                <a href="#projects" class="cta-button">View My Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>"Hi there! I'm [Your Name], and I've been diving into the world of 3D modeling and animation using Blender for the past six months. During this time, I've learned a tremendous amount about the intricacies of creating realistic and imaginative digital artwork, from modeling complex objects to mastering textures and lighting. What excites me the most is how Blender allows me to bring my creative ideas to life, turning concepts into interactive and visually stunning 3D models. Every project I take on sharpens my skills and pushes me to explore new techniques, and I’m eager to continue my journey in 3D design, expanding my capabilities and creating projects that captivate and inspire." </p>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="projects-container">
+                <div class="project-card">
+                    <img src="the final house.png" alt="Project 1">
+                    <h3>Project 1</h3>
+                    <p>This is another amazing project, i created it when i started my blender journey...</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+                <div class="project-card">
+                    <img src="project2.jpg" alt="Project 2">
+                    <h3>Project 2</h3>
+                    <p>A description of this amazing project goes here. What did you create? What technologies did you use?</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+                <!-- Add more projects as needed -->
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Let's connect! I'm always open to new opportunities or collaborations. Reach out to me below.</p>
+            <form id="contact-form" action="https://formspree.io/f/xkgnzvgy" method="POST">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Jai Kaishan Soni. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
